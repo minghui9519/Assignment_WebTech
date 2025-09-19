@@ -1,0 +1,157 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base: 3-color palette only */
+/* Palette: #9B7EBD (nav/buttons), #FFFBDE (content bg), #333 (text/footer bg) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #FFFBDE;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header and Navigation */
+header {
+    background: #9B7EBD;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav-brand h1 {
+    color: #FFFBDE;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu li { position: relative; }
+
+.nav-menu a {
+    color: #FFFBDE;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.nav-menu a:hover {
+    background-color: #333;
+    color: #FFFBDE;
+}
+
+/* Dropdown Menu */
+.dropdown { position: relative; }
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #FFFBDE;
+    min-width: 200px;
+    border: 1px solid #333;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; }
+
+.dropdown-menu a {
+    color: #333;
+    display: block;
+    padding: 0.75rem 1rem;
+}
+
+.dropdown-menu a:hover { background: #9B7EBD; color: #FFFBDE; }
+
+/* Main Content */
+main { min-height: calc(100vh - 140px); }
+
+/* Generic buttons/links constrained to palette */
+button,
+.button,
+.cta-button,
+.service-link,
+.registration-button,
+.group-button,
+.order-button,
+.plan-button,
+.promotion-button,
+.bundle-button,
+.tier-button,
+.info-button,
+.help-button,
+.join-button,
+.package-button,
+.consultation-button,
+.consultation-cta,
+.login-button,
+.submit-button,
+.reset-button {
+    background: #9B7EBD;
+    color: #FFFBDE;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover,
+.button:hover,
+.cta-button:hover,
+.service-link:hover,
+.registration-button:hover,
+.group-button:hover,
+.order-button:hover,
+.plan-button:hover,
+.promotion-button:hover,
+.bundle-button:hover,
+.tier-button:hover,
+.info-button:hover,
+.help-button:hover,
+.join-button:hover,
+.package-button:hover,
+.consultation-button:hover,
+.consultation-cta:hover,
+.login-button:hover,
+.submit-button:hover,
+.reset-button:hover {
+    background: #333;
+    color: #FFFBDE;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #FFFBDE;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer p { margin: 0.5rem 0; }
+
+/* Simple responsive adjustments */
+@media (max-width: 768px) {
+    .nav-menu { flex-direction: column; gap: 0.5rem; }
+}

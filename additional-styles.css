@@ -1,0 +1,67 @@
+/* Additional styles neutralized to respect global 3-color palette */
+.levels-grid,
+.types-grid,
+.promotions-grid,
+.plans-grid,
+.packages-grid,
+.features-grid,
+.benefits-grid,
+.includes-grid,
+.events-timeline,
+.info-grid,
+.categories-grid,
+.bouquet-grid,
+.decoration-grid,
+.portfolio-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+/* Remove gradients, shadows, and non-palette colors */
+.level-item,
+.type-item,
+.promotion-item,
+.plan-item,
+.package-item,
+.feature-item,
+.benefit-item,
+.schedule-item,
+.event-item,
+.category-item,
+.bouquet-item,
+.decoration-item,
+.portfolio-item,
+.include-item,
+.info-item {
+    background: #FFFBDE;
+    border: 1px solid #333;
+    padding: 1rem;
+}
+
+.level-icon,
+.benefit-icon,
+.schedule-date {
+    background: #9B7EBD;
+    color: #FFFBDE;
+}
+
+.promotion-badge { background: #9B7EBD; color: #FFFBDE; }
+.promotion-price,
+.plan-price,
+.package-price,
+.bundle-savings,
+.tier-price { color: #333; }
+
+.terms-section { background: #FFFBDE; }
+.terms-content li { color: #333; border-bottom: 1px solid #333; }
+.terms-content li::before { color: #9B7EBD; }
+
+@media (max-width: 768px) {
+    .levels-grid,
+    .types-grid,
+    .promotions-grid,
+    .plans-grid,
+    .packages-grid {
+        grid-template-columns: 1fr;
+    }
+}
