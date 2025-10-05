@@ -25,8 +25,7 @@ Assignment_WebTech/
 ├── workshop-registration.html   # 工作坊注册页面
 ├── membership-registration.html # 会员注册页面
 ├── login.html                   # 登录页面
-├── styles.css                   # 主样式文件
-├── additional-styles.css        # 额外样式文件
+├── styles.css                   # 主样式文件（已合并额外样式）
 ├── test-checklist.md           # 测试清单
 └── README.md                   # 说明文档
 ```
@@ -118,8 +117,7 @@ npx http-server
 ## 🎨 自定义样式
 
 要修改网站外观，可以编辑：
-- `styles.css` - 主要样式
-- `additional-styles.css` - 特殊组件样式
+- `styles.css` - 主要样式（包含原 additional-styles.css 内容）
 
 ## 📞 联系信息
 

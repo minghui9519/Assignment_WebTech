@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhancement - Root Flower</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <nav>
+            <a href="index.html" class="nav-brand">
+                <img class="site-logo" src="Rootflowerlogo.jpg" alt="Root Flower Logo">
+                <h1><strong>Root Flower</strong></h1>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Main</a></li>
+                <li class="dropdown">
+                    <a href="product-selection.html">Product</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hand-bouquet.html">Hand Bouquet</a></li>
+                        <li><a href="cny-decoration.html">CNY Decoration</a></li>
+                        <li><a href="grand-decoration.html">Grand Decoration</a></li>
+                        <li><a href="graduation.html">Graduation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="activities.html">Activities</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="workshop.html">Workshop</a></li>
+                        <li><a href="promotion.html">Promotion</a></li>
+                    </ul>
+                </li>
+                <li><a href="workshop-registration.html">Workshop</a></li>
+                <li><a href="membership-registration.html">Membership</a></li>
+                <li><a href="inquiry-form.html">Inquiry</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section class="inquiry-section">
+                <h1>Website Enhancements</h1>
+                <p>This page lists the enhancements implemented in this website that go beyond the basic requirements of the assignment.</p>
+                
+                <div class="enhancement-list">
+                    <article class="enhancement-item">
+                        <h3>1. CSS Animations & Keyframes - Hero Slideshow</h3>
+                        <p><strong>How it goes beyond basic requirements:</strong> Basic assignments typically use static images or simple layouts. This enhancement implements a sophisticated CSS-only slideshow with smooth fade transitions between 5 different background images, creating a dynamic and engaging user experience without JavaScript.</p>
+                        
+                        <p><strong>Code needed to implement:</strong></p>
+                        <div class="code-example">
+                            <pre><code>@keyframes fade {
+    0%   { opacity: 0; }
+    8%   { opacity: 1; }
+    20%  { opacity: 1; }
+    28%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: fade 25s infinite;
+  }
+
+  .slide1 { background-image: url('photo 1.jpeg'); animation-delay: 0s; }
+  .slide2 { background-image: url('photo 2.jpeg'); animation-delay: 5s; }
+  .slide3 { background-image: url('photo 3.jpeg'); animation-delay: 10s; }
+  .slide4 { background-image: url('photo 4.jpeg'); animation-delay: 15s; }
+  .slide5 { background-image: url('photo 5.jpeg'); animation-delay: 20s; }</code></pre>
+                        </div>
+                        
+                        <p><strong>Third-party source:</strong> CSS animations technique adapted from <a href="https://www.youtube.com/watch?v=oYRda7UtuhA" target="_blank">YouTube Video</a></p>
+                        
+                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#hero-section">Hero Section on Main Page</a></p>
+                    </article>
+
+                    <article class="enhancement-item">
+                        <h3>2. CSS Grid Layout System</h3>
+                        <p><strong>How it goes beyond basic requirements:</strong> Basic assignments typically use simple block layouts or basic flexbox. This enhancement implements advanced CSS Grid with responsive breakpoints, auto-fit columns, and complex multi-dimensional layouts that automatically adapt to different screen sizes.</p>
+                        
+                        <p><strong>Code needed to implement:</strong></p>
+                        <div class="code-example">
+                            <pre><code>.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+</code></pre>
+                        </div>
+                        
+                        <p><strong>Third-party source:</strong> CSS Grid techniques from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank">MDN CSS Grid Layout Documentation</a></p>
+                        
+                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#news-section">News Section Grid</a></p>
+                    </article>
+
+                   
+
+                    <article class="enhancement-item">
+                        <h3>3. Advanced CSS Transforms & Hover Effects</h3>
+                        <p><strong>How it goes beyond basic requirements:</strong> Basic assignments typically use simple hover color changes. This enhancement implements sophisticated 3D-style transforms with translateY, scale effects, and dynamic shadow changes that create depth and modern interaction feedback.</p>
+                        
+                        <p><strong>Code needed to implement:</strong></p>
+                        <div class="code-example">
+                            <pre><code>
+.news-card {
+    background: #FFFBDE;
+    border: 1px solid #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+                            
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.news-card:hover .news-image img {
+    transform: scale(1.05);
+}</code></pre>
+                        </div>
+                        
+                        <p><strong>Third-party source:</strong> Transform techniques from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform" target="_blank">MDN CSS Transform Documentation</a></p>
+                        
+                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#news-cards">News Cards Hover Effects</a></p>
+                    </article>
+
+                    <article class="enhancement-item">
+                        <h3>4. CSS Pseudo-elements for Visual Overlays</h3>
+                        <p><strong>How it goes beyond basic requirements:</strong> Basic assignments typically use solid backgrounds or simple styling. This enhancement uses ::before and ::after pseudo-elements to create semi-transparent overlays, enhancing text readability and creating sophisticated visual effects without additional HTML elements.</p>
+                        
+                        <p><strong>Code needed to implement:</strong></p>
+                        <div class="code-example">
+                            <pre><code>
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.company-intro-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: 1;
+}
+</code></pre>
+                        </div>
+                        
+                        <p><strong>Third-party source:</strong> Pseudo-element techniques from <a href="https://css-tricks.com/almanac/selectors/a/after-and-before/" target="_blank">CSS-Tricks ::before and ::after Guide</a></p>
+                        
+                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#hero-section">Hero Section Overlay</a></p>
+                    </article>
+
+                    <article class="enhancement-item">
+                        <h3>5. Pure CSS Dropdown Navigation System</h3>
+                        <p><strong>How it goes beyond basic requirements:</strong> Basic assignments typically use simple navigation lists. This enhancement creates a sophisticated dropdown menu system using only CSS with smooth opacity transitions, proper z-index layering, and hover states that work without JavaScript.</p>
+                        
+                        <p><strong>Code needed to implement:</strong></p>
+                        <div class="code-example">
+                            <pre><code>.dropdown { position: relative; }
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    min-width: 200px;
+    border: 1px solid #333;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-menu {opacity: 1; visibility: visible;}
+</code></pre>
+                        </div>
+                        
+                        <p><strong>Third-party source:</strong> Dropdown technique from <a href="https://css-tricks.com/dropdown-menus-with-more-forgiving-mouse-movement-paths/" target="_blank">CSS-Tricks Dropdown Menus Guide</a></p>
+                        
+                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#navigation">Navigation Dropdown Menus</a></p>
+                    </article>
+
+                    <article class="enhancement-item">
+                        <h3>6. CSS-Only Responsive Navigation with Progressive Breakpoints</h3>
+                        <p><strong>How it goes beyond basic requirements:</strong> Basic assignments typically use simple responsive design or single breakpoints. This enhancement implements a comprehensive responsive navigation system with multiple breakpoints (1200px, 1024px, 900px, 768px), progressive scaling of navigation items, and a CSS-only mobile menu that transforms from horizontal to vertical layout without JavaScript.</p>
+                        
+                        <p><strong>Code needed to implement:</strong></p>
+                        <div class="code-example">
+                            <pre><code>/* Progressive responsive breakpoints */
+@media (max-width: 1200px) {
+    .nav-menu {
+        gap: 1.5rem;
+    }
+    .nav-menu a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav {
+        padding: 1rem 1.5rem;
+    }
+    .nav-menu {
+        gap: 1.2rem;
+    }
+    .nav-menu a {
+        padding: 0.4rem 0.7rem;
+        font-size: 0.9rem;
+    }
+    .nav-brand h1 {
+        font-size: 1.6rem;
+    }
+    .site-logo {
+        height: 42px;
+    }
+}
+
+@media (max-width: 900px) {
+    nav {
+        padding: 1rem 1rem;
+    }
+    .nav-menu {
+        gap: 1rem;
+    }
+    .nav-menu a {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.85rem;
+    }
+    .nav-brand h1 {
+        font-size: 1.4rem;
+    }
+    .site-logo {
+        height: 38px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 1rem;
+        min-height: auto;
+        position: relative;
+    }
+    
+    /* Show menu indicator */
+    nav::after {
+        content: "☰ Menu";
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: #FFFBDE;
+        font-size: 0.9rem;
+        font-weight: 500;
+        z-index: 1000;
+        padding: 0.5rem;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        margin-top: 1rem;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 0.5rem 0;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease;
+    }
+    
+    /* Show menu on hover */
+    nav:hover .nav-menu {
+        max-height: 1000px;
+    }
+    
+    .nav-menu li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-menu a {
+        display: block;
+        padding: 1rem 1.5rem;
+        width: 100%;
+        text-align: left;
+        border-radius: 0;
+        font-size: 1rem;
+    }
+}</code></pre>
+                        </div>
+                        
+                        <p><strong>Third-party source:</strong> Responsive navigation techniques from <a href="https://web.dev/responsive-web-design-basics/" target="_blank">Google Web Fundamentals - Responsive Web Design</a></p>
+                        
+                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#navigation">Navigation Menu (resize browser to see responsive behavior)</a></p>
+                    </article>
+
+                    <article class="enhancement-item">
+                        <h3>7. Advanced Responsive Design with Multiple Breakpoints</h3>
+                        <p><strong>How it goes beyond basic requirements:</strong> Basic assignments typically use simple responsive design or single breakpoints. This enhancement implements a comprehensive responsive system with multiple breakpoints (991px, 768px, 480px), different grid layouts for each screen size, and mobile-first approach with progressive enhancement for content sections.</p>
+                        
+                        <p><strong>Code needed to implement:</strong></p>
+                        <div class="code-example">
+                            <pre><code>@media (max-width: 991px) {
+    footer .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    .intro-features {
+        flex-direction: column;
+    }
+    .intro-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-content h2 {
+        font-size: 2rem;
+    }
+    .news-section h2 {
+        font-size: 2rem;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}</code></pre>
+                        </div>
+                        
+                        <p><strong>Third-party source:</strong> Responsive design techniques from <a href="https://web.dev/responsive-web-design-basics/" target="_blank">Google Web Fundamentals - Responsive Web Design</a></p>
+                        
+                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#news-section">News Section Grid</a> | <a href="index.html#intro-features">Intro Features Layout</a></p>
+                    </article>
+
+                    <article class="enhancement-item">
+                        <h3>8. Font Awesome Icons Integration with Security</h3>
+                        <p><strong>How it goes beyond basic requirements:</strong> Basic assignments typically use simple text or basic HTML symbols. This enhancement integrates a professional icon library (Font Awesome) via CDN with proper security measures including integrity hashing and CORS policies.</p>
+                        
+                        <p><strong>Code needed to implement:</strong></p>
+                        <div class="code-example">
+                            <pre><code>&lt;link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" /&gt;
+
+&lt;!-- Usage example --&gt;
+&lt;i class="fa-brands fa-facebook"&gt;&lt;/i&gt;
+&lt;i class="fa-solid fa-envelope"&gt;&lt;/i&gt;
+&lt;i class="fa-solid fa-phone"&gt;&lt;/i&gt;
+&lt;i class="fa-solid fa-map"&gt;&lt;/i&gt;
+&lt;i class="fa-solid fa-book"&gt;&lt;/i&gt;
+&lt;i class="fa-solid fa-rocket"&gt;&lt;/i&gt;
+&lt;i class="fa-regular fa-circle-user"&gt;&lt;/i&gt;
+&lt;i class="fa-brands fa-instagram"&gt;&lt;/i&gt;
+&lt;i class="fa-brands fa-youtube"&gt;&lt;/i&gt;
+</code></pre>
+                        </div>
+                        
+                        <p><strong>Third-party source:</strong> <a href="https://fontawesome.com/" target="_blank">Font Awesome Official Website</a> - Free icon library with CDN integration</p>
+                        
+                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#footer"> Icons in Footer</a></p>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+    <div class="container">
+  
+      <div class="sec aboutus">
+        <h2>About us</h2>
+        <p><strong>Find out more about us</strong></p>
+        <ul class="sci">
+          <li><a href="profile.html" title="Profile"><i class="fa-regular fa-circle-user"></i></a></li>
+          <li><a href="https://www.facebook.com/theRootFlowerGift" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/root.flowersss/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/@rootflower" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="References.html" title="References"><i class="fa-solid fa-book"></i></a></li>
+          <li><a href="enhancement1.html" title="Enhancement"><i class="fa-solid fa-rocket"></i></a></li>
+        </ul>
+      </div>
+  
+      <div class="sec quicklinks">
+        <h2>Location</h2>
+        <ul>
+          <li><p><i class="fa-solid fa-map"></i><a href="https://www.google.com/maps/place/Root+Flower/@1.5027018,110.3529903,17z/data=!3m1!4b1!4m6!3m5!1s0x31fba7e7dbdd19e9:0xcef55dd65e78119!8m2!3d1.5027018!4d110.3555652!16s%2Fg%2F11rhr3hrp7?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Google Maps">Lorong Bdc, 93350 Kuching, Sarawak</a></p></li>
+        </ul>
+      </div>
+  
+      <div class="sec quicklinks">
+        <h2>Shop</h2>
+        <ul>
+          <li><a href="hand-bouquet.html">Hand Bouquet</a></li>
+          <li><a href="cny-decoration.html">CNY Decoration</a></li>
+          <li><a href="grand-decoration.html">Grand Decoration</a></li>
+          <li><a href="graduation.html">Graduation</a></li>
+        </ul>
+      </div>
+  
+      <div class="sec contact">
+        <h2>Contact us</h2>
+        <ul class="info">
+          <li>
+            <span><i class="fa-solid fa-phone"></i></span>
+            <p>0143399709</p>
+          </li>
+          <li>
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <p><a href="mailto:rootflower@gmail.com" title="Email">rootflower@gmail.com</a></p>
+          </li>
+        </ul>
+      </div>
+  
+    </div>
+    </footer>
+    
+    <div class="copyrightText">
+      <p>&copy; Root Flower. All rights reserved.</p>
+    </div>
+</body>
+</html>

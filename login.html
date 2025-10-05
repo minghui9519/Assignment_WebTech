@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Root Flower</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="additional-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Header Navigation -->
     <header>
         <nav>
-            <div class="nav-brand">
+            <a href="index.html" class="nav-brand">
                 <img class="site-logo" src="Rootflowerlogo.jpg" alt="Root Flower Logo">
-                <h1>Root Flower</h1>
-            </div>
+                <h1><strong>Root Flower</strong></h1>
+            </a>
             <ul class="nav-menu">
-                <li><a href="index.html">Main Page</a></li>
+                <li><a href="index.html">Main</a></li>
                 <li class="dropdown">
-                    <a href="product-selection.html">Product Selection</a>
+                    <a href="product-selection.html">Product</a>
                     <ul class="dropdown-menu">
                         <li><a href="hand-bouquet.html">Hand Bouquet</a></li>
                         <li><a href="cny-decoration.html">CNY Decoration</a></li>
@@ -33,9 +33,9 @@
                         <li><a href="promotion.html">Promotion</a></li>
                     </ul>
                 </li>
-                <li><a href="workshop-registration.html">Workshop Registration</a></li>
-                <li><a href="membership-registration.html">Membership Registration</a></li>
-                <li><a href="inquiry-form.html">Inquiry Form</a></li>
+                <li><a href="workshop-registration.html">Workshop</a></li>
+                <li><a href="membership-registration.html">Membership</a></li>
+                <li><a href="inquiry-form.html">Inquiry</a></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
@@ -45,21 +45,117 @@
     <main>
         <div class="container">
             <section class="inquiry-section">
-                <h2>Login</h2>
-                <p>This page is under construction. Please check back later.</p>
+                <h2>User Login</h2>
+                <p>Please enter your credentials to access your account.</p>
+                
+                <form class="inquiry-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="login">Username *</label>
+                        <input 
+                            type="text" 
+                            id="login" 
+                            name="login" 
+                            maxlength="10" 
+                            pattern="[A-Za-z]+" 
+                            title="Please enter only alphabetical characters (maximum 10 characters)"
+                            required 
+                            autocomplete="username"
+                        >
+                        <small class="form-help">Enter your username (letters only, maximum 10 characters)</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password *</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            maxlength="25" 
+                            pattern="[A-Za-z]+" 
+                            title="Please enter only alphabetical characters (maximum 25 characters)"
+                            required 
+                            autocomplete="current-password"
+                        >
+                        <small class="form-help">Enter your password (letters only, maximum 25 characters)</small>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-button">
+                            <i class="fa-solid fa-sign-in-alt"></i>
+                            Login
+                        </button>
+                        <button type="reset" class="reset-button">
+                            <i class="fa-solid fa-undo"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+
+                <div class="login-help">
+                    <p><strong>Need help?</strong></p>
+                    <ul>
+                        <li>Forgot your password? <a href="inquiry-form.html">Contact us</a> for assistance</li>
+                        <li>Don't have an account? <a href="membership-registration.html">Register here</a></li>
+                        <li>Having trouble logging in? <a href="inquiry-form.html">Submit an inquiry</a></li>
+                    </ul>
+                </div>
             </section>
         </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p><strong>&copy; Root Flower. All rights reserved.</strong></p>
-            <p><strong>Contact us: <a href="mailto:therootflower@gmail.com" target="_blank">Click here to drop an email</a></strong></p>
-            <p><strong>Follow us on <a href="https://www.instagram.com/root.flowersss/" target="_blank">Instagram</a></strong></p>
-            <p><strong>Call us at 014-339 9709 &#38; <a href="https://api.whatsapp.com/send?phone=60143399709" target="_blank">Click here to send a message</a></strong></p>
-            <p><strong><hr>Visit us at <a href="https://www.google.com/maps/place/Root+Flower/@1.5027018,110.3529903,17z/data=!4m14!1m7!3m6!1s0x31fba7e7dbdd19e9:0xcef55dd65e78119!2sRoot+Flower!8m2!3d1.5027018!4d110.3555652!16s%2Fg%2F11rhr3hrp7!3m5!1s0x31fba7e7dbdd19e9:0xcef55dd65e78119!8m2!3d1.5027018!4d110.3555652!16s%2Fg%2F11rhr3hrp7?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Lorong Bdc, 93350 Kuching, Sarawak</a></strong></p>
-        </div>
+    <div class="container">
+  
+      <div class="sec aboutus">
+        <h2>About us</h2>
+        <p><strong>Find out more about us</strong></p>
+        <ul class="sci">
+          <li><a href="profile.html" title="Profile"><i class="fa-regular fa-circle-user"></i></a></li>
+          <li><a href="https://www.facebook.com/theRootFlowerGift" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/root.flowersss/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/@rootflower" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="References.html" title="References"><i class="fa-solid fa-book"></i></a></li>
+          <li><a href="enhancement1.html" title="Enhancement"><i class="fa-solid fa-rocket"></i></a></li>
+        </ul>
+      </div>
+  
+      <div class="sec quicklinks">
+        <h2>Location</h2>
+        <ul>
+          <li><p><i class="fa-solid fa-map"></i><a href="https://www.google.com/maps/place/Root+Flower/@1.5027018,110.3529903,17z/data=!3m1!4b1!4m6!3m5!1s0x31fba7e7dbdd19e9:0xcef55dd65e78119!8m2!3d1.5027018!4d110.3555652!16s%2Fg%2F11rhr3hrp7?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Google Maps">Lorong Bdc, 93350 Kuching, Sarawak</a></p></li>
+        </ul>
+      </div>
+  
+      <div class="sec quicklinks">
+        <h2>Shop</h2>
+        <ul>
+          <li><a href="hand-bouquet.html">Hand Bouquet</a></li>
+          <li><a href="cny-decoration.html">CNY Decoration</a></li>
+          <li><a href="grand-decoration.html">Grand Decoration</a></li>
+          <li><a href="graduation.html">Graduation</a></li>
+        </ul>
+      </div>
+  
+      <div class="sec contact">
+        <h2>Contact us</h2>
+        <ul class="info">
+          <li>
+            <span><i class="fa-solid fa-phone"></i></span>
+            <p>0143399709</p>
+          </li>
+          <li>
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <p><a href="mailto:rootflower@gmail.com" title="Email">rootflower@gmail.com</a></p>
+          </li>
+        </ul>
+      </div>
+  
+    </div>
     </footer>
+    
+    <div class="copyrightText">
+      <p>&copy; Root Flower. All rights reserved.</p>
+    </div>
 </body>
 </html>
