@@ -82,10 +82,11 @@
   .slide4 { background-image: url('photo 4.jpeg'); animation-delay: 15s; }
   .slide5 { background-image: url('photo 5.jpeg'); animation-delay: 20s; }</code></pre>
                         </div>
+                      
+                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#hero-section">Hero Section on Main Page</a></p>
                         
                         <p><strong>Third-party source:</strong> CSS animations technique adapted from <a href="https://www.youtube.com/watch?v=oYRda7UtuhA" target="_blank">YouTube Video</a></p>
                         
-                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#hero-section">Hero Section on Main Page</a></p>
                     </article>
 
                     <article class="enhancement-item">
@@ -101,10 +102,10 @@
 }
 </code></pre>
                         </div>
+                       
+                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#news-section">News Section Grid</a></p>
                         
                         <p><strong>Third-party source:</strong> CSS Grid techniques from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank">MDN CSS Grid Layout Documentation</a></p>
-                        
-                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#news-section">News Section Grid</a></p>
                     </article>
 
                    
@@ -133,10 +134,10 @@
     transform: scale(1.05);
 }</code></pre>
                         </div>
+                       
+                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#news-cards">News Cards Hover Effects</a></p>
                         
                         <p><strong>Third-party source:</strong> Transform techniques from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform" target="_blank">MDN CSS Transform Documentation</a></p>
-                        
-                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#news-cards">News Cards Hover Effects</a></p>
                     </article>
 
                     <article class="enhancement-item">
@@ -166,10 +167,10 @@
 }
 </code></pre>
                         </div>
+                   
+                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#hero-section">Hero Section Overlay</a></p>
                         
                         <p><strong>Third-party source:</strong> Pseudo-element techniques from <a href="https://css-tricks.com/almanac/selectors/a/after-and-before/" target="_blank">CSS-Tricks ::before and ::after Guide</a></p>
-                        
-                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#hero-section">Hero Section Overlay</a></p>
                     </article>
 
                     <article class="enhancement-item">
@@ -198,10 +199,10 @@
 .dropdown:hover .dropdown-menu {opacity: 1; visibility: visible;}
 </code></pre>
                         </div>
+                     
+                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#navigation">Navigation Dropdown Menus</a></p>
                         
                         <p><strong>Third-party source:</strong> Dropdown technique from <a href="https://css-tricks.com/dropdown-menus-with-more-forgiving-mouse-movement-paths/" target="_blank">CSS-Tricks Dropdown Menus Guide</a></p>
-                        
-                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#navigation">Navigation Dropdown Menus</a></p>
                     </article>
 
                     <article class="enhancement-item">
@@ -316,10 +317,10 @@
     }
 }</code></pre>
                         </div>
-                        
-                        <p><strong>Third-party source:</strong> Responsive navigation techniques from <a href="https://web.dev/responsive-web-design-basics/" target="_blank">Google Web Fundamentals - Responsive Web Design</a></p>
-                        
+
                         <p><strong>Hyperlink to implementation:</strong> <a href="index.html#navigation">Navigation Menu (resize browser to see responsive behavior)</a></p>
+                       
+                        <p><strong>Third-party source:</strong> Responsive navigation techniques from <a href="https://web.dev/responsive-web-design-basics/" target="_blank">Google Web Fundamentals - Responsive Web Design</a></p>
                     </article>
 
                     <article class="enhancement-item">
@@ -359,10 +360,10 @@
     }
 }</code></pre>
                         </div>
+
+                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#news-section">News Section Grid</a> | <a href="index.html#intro-features">Intro Features Layout</a></p>
                         
                         <p><strong>Third-party source:</strong> Responsive design techniques from <a href="https://web.dev/responsive-web-design-basics/" target="_blank">Google Web Fundamentals - Responsive Web Design</a></p>
-                        
-                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#news-section">News Section Grid</a> | <a href="index.html#intro-features">Intro Features Layout</a></p>
                     </article>
 
                     <article class="enhancement-item">
@@ -389,11 +390,207 @@
 &lt;i class="fa-brands fa-youtube"&gt;&lt;/i&gt;
 </code></pre>
                         </div>
+                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#footer"> Icons in Footer</a></p>
                         
                         <p><strong>Third-party source:</strong> <a href="https://fontawesome.com/" target="_blank">Font Awesome Official Website</a> - Free icon library with CDN integration</p>
-                        
-                        <p><strong>Hyperlink to implementation:</strong> <a href="index.html#footer"> Icons in Footer</a></p>
                     </article>
+
+                    <article class="enhancement-item">
+                        <h3>9. Advanced CSS transforms & Hover Effects</h3>
+                        <p><strong>How it goes beyond basic requirements:</strong> Basic assignments typically use simple hover color changes. This enhancement implements sophisticated 3D-style transforms with translateY, scale effects, and dynamic shadow changes that create depth and modern interaction feedback.</p>
+                        
+                        <p><strong>Code needed to implement:</strong></p>
+                        <div class="code-example">
+                            <pre><code>.box-area{
+    display: flex;
+    justify-content: flex-start;
+    gap:20px;
+    flex-wrap:wrap;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.box{
+    width:45%;
+    border-radius:12px;
+}
+
+.box img{
+   width:100%;
+   border-radius:5px;
+   display:block;
+   transition: transform 0.8s;
+   padding: 15px;
+}
+
+.box img:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.4);
+}
+</code></pre>
+                        </div>
+                        <p><strong>Hyperlink to implementation:</strong> <a href="workshop.html#box-area">Workshop Images Hover Effects</a></p>
+                        
+                        <p><strong>Third-party source:</strong> Responsive design techniques from <a href="https://www.youtube.com/watch?v=oYRda7UtuhA" target="_blank">YouTube CSS Animation Tutorial</a></p>
+                    </article>
+
+                    <article class="enhancement-item">
+                        <h3>10. HTML Tags - Aside</h3>
+                        <p><strong>How it goes beyond basic requirements:</strong> The aside tag enhances the webpage by displaying instructor details beside the main content. It goes beyond basic requirements by improving structure, accessibility, and user experience.</p>
+                        
+                        <p><strong>Code needed to implement:</strong></p>
+                        <div class="code-example">
+                            <pre><code>.workshop-sidebar{
+    position:sticky;
+    top:30px;
+}
+
+.instructor-card{
+    background:white;
+    padding:25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);  
+}
+
+.instructor-card img{
+    width:250px;
+}
+</code></pre>
+                        </div>
+                        <p><strong>Hyperlink to implementation:</strong> <a href="workshop.html#workshop-sidebar">Workshop Sidebar</a></p>
+                        
+                        <p><strong>Third-party source:</strong> Responsive design techniques from <a href="https://youtu.be/cTzboA2_a-g?si=5qXo-t1fPmce_itv" target="_blank">HTML Tags - Aside</a></p>
+                    </article>
+
+                    <article class="enhancement-item">
+                        <h3>11. Advanced CSS transforms & Hover Effects</h3>
+                        <p><strong>How it goes beyond basic requirements:</strong> Basic assignments typically use simple hover color changes. This enhancement implements sophisticated 3D-style transforms with translateY, scale effects, and dynamic shadow changes that create depth and modern interaction feedback.</p>
+                        
+                        <p><strong>Code needed to implement:</strong></p>
+                        <div class="code-example">
+                            <pre><code>.promo-offers{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;   /*more spacing between cards*/
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    width: 100%;
+    margin: 0;  
+}
+
+.offer-card{
+    flex: 1 1 30%;
+    min-width: 280px;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 40px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.offer-card h3, 
+.offer-card p{ 
+    margin-bottom: 15px;
+}
+
+.offer-card:hover{
+    transform: translateY(-5px);
+}
+
+.offer-card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-bottom: 15px; 
+}
+
+.btn{
+    margin-top: auto;
+    padding: 10px 20px;
+    background: #9B7EBD;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+</code></pre>
+                        </div>
+                        <p><strong>Hyperlink to implementation:</strong> <a href="promotion.html#promo-offers">Promotion Images Hover Effects</a></p>
+                        
+                        <p><strong>Third-party source:</strong> Responsive design techniques from <a href="https://www.youtube.com/watch?v=oYRda7UtuhA" target="_blank">YouTube CSS Animation Tutorial</a></p>
+                    </article>
+
+                    <article class="enhancement-item">
+                        <h3>12. Advanced CSS transforms & Hover Effects</h3>
+                        <p><strong>How it goes beyond basic requirements:</strong> Basic assignments typically use simple hover color changes. This enhancement implements sophisticated 3D-style transforms with translateY, scale effects, and dynamic shadow changes that create depth and modern interaction feedback.</p>
+                        
+                        <p><strong>Code needed to implement:</strong></p>
+                        <div class="code-example">
+                            <pre><code>.promotion-section{
+    margin-bottom: 25px;
+}
+
+.ordered-list{
+    max-width: 900px;
+    margin:0 auto;
+    font-size: 19px;
+    line-height: 1.8;
+    padding:20px 25px;
+    font-weight: 500;
+    background: #d6f0d6;
+    border-radius: 12px;
+    border-left: 6px solid #4CAF50;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    transition: background 0.4s ease-in-out;
+}
+
+.ordered-list:hover{
+    background: #dff5df;
+}
+
+.ordered-list li{
+    margin-left:20px;
+    color:#444;
+    padding:8px 0;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.ordered-list li:hover{
+    color:#000000;
+}
+
+.promotion-section h2{
+    color:#2d5a27;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #c8f2c8; 
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI',sans-serif;
+}
+
+.ShopNow{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+</code></pre>
+                        </div>
+                        <p><strong>Hyperlink to implementation:</strong> <a href="promotion.html#promotion-section">Promotion Ordered-lists Hover Effects</a></p>
+                        
+                        <p><strong>Third-party source:</strong> Responsive design techniques from <a href="https://www.youtube.com/watch?v=oYRda7UtuhA" target="_blank">YouTube CSS Animation Tutorial</a></p>
+                    </article>
+
+
                 </div>
             </section>
         </div>
