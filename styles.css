@@ -22,7 +22,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 0px;
 }
 
 /* Header and Navigation */
@@ -146,7 +146,7 @@ main { min-height: calc(100vh - 140px); }
 /* Hero Section */
 .hero {
     position: relative;
-    height: 80vh;
+    height: 90vh;
     min-height: 500px;
     display: flex;
     align-items: center;
@@ -181,11 +181,11 @@ main { min-height: calc(100vh - 140px); }
   }
   
   /* Background Images  */
-  .slide1 { background-image: url('photo 1.jpeg'); animation-delay: 0s; }
-  .slide2 { background-image: url('photo 2.jpeg'); animation-delay: 5s; }
-  .slide3 { background-image: url('photo 3.jpeg'); animation-delay: 10s; }
-  .slide4 { background-image: url('photo 4.jpeg'); animation-delay: 15s; }
-  .slide5 { background-image: url('photo 5.jpeg'); animation-delay: 20s; }
+  .slide1 { background-image: url('images/photo 1.jpeg'); animation-delay: 0s; }
+  .slide2 { background-image: url('images/photo 2.jpeg'); animation-delay: 5s; }
+  .slide3 { background-image: url('images/photo 3.jpeg'); animation-delay: 10s; }
+  .slide4 { background-image: url('images/photo 4.jpeg'); animation-delay: 15s; }
+  .slide5 { background-image: url('images/photo 5.jpeg'); animation-delay: 20s; }
   
   /* Fade Animation */
   @keyframes fade {
@@ -222,9 +222,9 @@ main { min-height: calc(100vh - 140px); }
 
 /* Company Introduction Section */
 .company-intro-section {
-    padding: 2rem 0 4rem 0;
+    padding: 2rem 0rem 4rem 0rem;
     background-color: #ffffff;
-    background-image: url('Background.jpg');
+    background-image: url('images/Background.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -320,7 +320,7 @@ main { min-height: calc(100vh - 140px); }
 .news-section {
     padding: 2rem 0 4rem 0;
     background-color: #fff;
-    background-image: url('Background.jpg');
+    background-image: url('images/Background.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -641,41 +641,31 @@ button:hover,
     }
   }
 
-/* Profile Layout */
-.profile-page {
-  background-color: rgba(235, 238, 255, 1);
-  color: #888ea8;
-}
-
-.profile-page main {
-  padding: 2rem 0;
-  min-height: calc(100vh - 200px);
-}
-
-/* Inquiry Form Styles */
+/* Login form specific styles */
 .inquiry-section {
-    padding: 2rem 0;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border: 1px solid #333;
+    border-radius: 8px;
 }
 
 .inquiry-section h2 {
-    margin-bottom: 1rem;
     text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .inquiry-section p {
     text-align: center;
-    margin-bottom: 2rem;
     color: #666;
+    margin-bottom: 2rem;
 }
 
 .inquiry-form {
-    background: #FFFBDE;
-    border: 1px solid #333;
-    border-radius: 8px;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    width: 100%;
 }
 
 .form-group {
@@ -685,30 +675,25 @@ button:hover,
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #333;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
+.form-group input {
     width: 100%;
     padding: 0.75rem;
     border: 1px solid #333;
     border-radius: 4px;
     font-size: 1rem;
-    background: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
+.form-group input:focus {
     outline: none;
     border-color: #9B7EBD;
     box-shadow: 0 0 0 2px rgba(155, 126, 189, 0.2);
 }
 
-/* Login form specific styles */
 .form-help {
     display: block;
     margin-top: 0.25rem;
@@ -1215,6 +1200,74 @@ input:focus:valid {
     }
 }
 
+/* === Additional overrides merged from additional-styles.css === */
+/* Additional styles neutralized to respect global 3-color palette */
+.levels-grid,
+.types-grid,
+.promotions-grid,
+.plans-grid,
+.packages-grid,
+.features-grid,
+.benefits-grid,
+.includes-grid,
+.events-timeline,
+.info-grid,
+.categories-grid,
+.bouquet-grid,
+.decoration-grid,
+.portfolio-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+/* Remove gradients, shadows, and non-palette colors */
+.level-item,
+.type-item,
+.promotion-item,
+.plan-item,
+.package-item,
+.feature-item,
+.benefit-item,
+.schedule-item,
+.event-item,
+.category-item,
+.bouquet-item,
+.decoration-item,
+.portfolio-item,
+.include-item,
+.info-item {
+    background: #FFFBDE;
+    border: 1px solid #333;
+    padding: 1rem;
+}
+
+.level-icon,
+.benefit-icon,
+.schedule-date {
+    background: #9B7EBD;
+    color: #FFFBDE;
+}
+
+.promotion-badge { background: #9B7EBD; color: #FFFBDE; }
+.promotion-price,
+.plan-price,
+.package-price,
+.bundle-savings,
+.tier-price { color: #333; }
+
+.terms-section { background: #FFFBDE; }
+.terms-content li { color: #333; border-bottom: 1px solid #333; }
+.terms-content li::before { color: #9B7EBD; }
+
+@media (max-width: 768px) {
+    .levels-grid,
+    .types-grid,
+    .promotions-grid,
+    .plans-grid,
+    .packages-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* graduation */
 #graduationbouquet{
@@ -1539,65 +1592,6 @@ hr{
 
 
 
-/* === Additional overrides merged from additional-styles.css === */
-/* Additional styles neutralized to respect global 3-color palette */
-.levels-grid,
-.types-grid,
-.promotions-grid,
-.plans-grid,
-.packages-grid,
-.features-grid,
-.benefits-grid,
-.includes-grid,
-.events-timeline,
-.info-grid,
-.categories-grid,
-.bouquet-grid,
-.decoration-grid,
-.portfolio-grid {
-    display: grid;
-    gap: 2rem;
-}
-
-/* Remove gradients, shadows, and non-palette colors */
-.level-item,
-.type-item,
-.promotion-item,
-.plan-item,
-.package-item,
-.feature-item,
-.benefit-item,
-.schedule-item,
-.event-item,
-.category-item,
-.bouquet-item,
-.decoration-item,
-.portfolio-item,
-.include-item,
-.info-item {
-    background: #FFFBDE;
-    border: 1px solid #333;
-    padding: 1rem;
-}
-
-.level-icon,
-.benefit-icon,
-.schedule-date {
-    background: #9B7EBD;
-    color: #FFFBDE;
-}
-
-.promotion-badge { background: #9B7EBD; color: #FFFBDE; }
-.promotion-price,
-.plan-price,
-.package-price,
-.bundle-savings,
-.tier-price { color: #333; }
-
-.terms-section { background: #FFFBDE; }
-.terms-content li { color: #333; border-bottom: 1px solid #333; }
-.terms-content li::before { color: #9B7EBD; }
-
 @media (max-width: 768px) {
     .levels-grid,
     .types-grid,
@@ -1609,6 +1603,29 @@ hr{
 }
 
 /* Enhancement Page Styles */
+.enhancement-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.enhancement-section h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.enhancement-section p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
 .enhancement-list {
     display: flex;
     flex-direction: column;
@@ -1687,6 +1704,15 @@ hr{
 
 /* Responsive adjustments for enhancement page */
 @media (max-width: 768px) {
+    .enhancement-section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .enhancement-section h1 {
+        font-size: 2rem;
+    }
+    
     .enhancement-item {
         padding: 1rem;
     }
