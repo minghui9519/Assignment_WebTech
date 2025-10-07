@@ -642,6 +642,10 @@ button:hover,
   }
 
 /* Login form specific styles */
+.background{
+    background-color: rgb(231, 220, 250);
+}
+
 .inquiry-section {
     max-width: 600px;
     margin: 2rem auto;
@@ -1202,6 +1206,36 @@ input:focus:valid {
 
 /* === Additional overrides merged from additional-styles.css === */
 /* Additional styles neutralized to respect global 3-color palette */
+.profile-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+.member-card {
+    background: #FFFBDE;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+}
+.member-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #e9ecef;
+    border: 2px solid #9B7EBD;
+    margin: 0 auto 1rem;
+    display: grid;
+    place-items: center;
+    color: #666;
+    font-size: 0.9rem;
+    overflow: hidden;
+}
+.member-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    display: block;
+}
+.member-name { color: #333; margin: 0.5rem 0 1rem; }
 .levels-grid,
 .types-grid,
 .promotions-grid,
@@ -1727,4 +1761,272 @@ hr{
     .code-example pre {
         font-size: 0.8rem;
     }
+}
+
+/* Profile Page Styles */
+.profile-page body{
+    margin:auto;
+    padding:0;
+    height:100%;
+    font-family:Arial, sans-serif;
+    line-height: 6mm;
+}
+
+/* Removed .profile-page .container override to prevent footer styling conflicts */
+
+/* Shared Profile Layout Styles */
+.background{
+    padding: 10px 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.profile-container{
+    text-align: center;
+    padding:10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.profile-pic img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.intro p{
+    font-family: Arial, Sans-serif;
+    text-align: center;
+    font-size: 200%;
+    font-weight:bold;
+}
+
+#id{
+    font-size: 150%;
+}
+
+/*table style*/
+.table-background{
+    padding: 20px;
+}
+
+.info-table{
+    width:80%;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.info-table th,
+.info-table td {
+    padding: 12px 15px;
+    border-radius: 8px;
+}
+
+.info-table th {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.info-table td {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.email-button{
+    margin: auto;
+    display: block;
+    padding: 14px 22px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Profile 1 - Purple Theme */
+.profile1-page .background {
+    background-color: rgba(248, 163, 27, 0.8);
+}
+
+.profile1-page .profile-container {
+    background-color: rgba(207, 238, 10, 0.141);
+}
+
+.profile1-page #course {
+    color: rgb(32, 154, 255);
+}
+
+.profile1-page .table-background {
+    background-color: rgba(157, 253, 240, 0.8);
+}
+
+.profile1-page .info-table {
+    border: 3px solid #0fe2f9;
+}
+
+.profile1-page .info-table th,
+.profile1-page .info-table td {
+    border: 3px solid #134ded;
+}
+
+.profile1-page .info-table th {
+    background-color: rgba(239, 250, 17, 0.723);
+}
+
+.profile1-page .info-table td {
+    background-color: rgba(122, 241, 252, 0.573);
+}
+
+.profile1-page .info-table tr:hover {
+    background-color: rgba(226, 205, 43, 0.619);
+}
+
+.profile1-page .email-button {
+    background-color: rgba(255, 0, 0, 0.69);
+}
+
+.profile1-page .email-button:hover {
+    background-color: rgba(236, 19, 23, 0.619);
+}
+
+/* Profile 2 - Orange Theme */
+.profile2-page .background {
+    background-color: rgba(255, 166, 0, 0.8);
+}
+
+.profile2-page .profile-container {
+    background-color: rgba(255, 200, 100, 0.9);
+}
+
+.profile2-page #course {
+    color: rgb(255, 100, 0);
+}
+
+.profile2-page .table-background {
+    background-color: rgba(255, 166, 0, 0.6);
+}
+
+.profile2-page .info-table {
+    border: 3px solid #ff6600;
+}
+
+.profile2-page .info-table th,
+.profile2-page .info-table td {
+    border: 3px solid #cc5500;
+}
+
+.profile2-page .info-table th {
+    background-color: rgba(255, 200, 50, 0.8);
+}
+
+.profile2-page .info-table td {
+    background-color: rgba(255, 220, 150, 0.7);
+}
+
+.profile2-page .info-table tr:hover {
+    background-color: rgba(255, 180, 80, 0.8);
+}
+
+.profile2-page .email-button {
+    background-color: rgba(255, 166, 0, 0.9);
+}
+
+.profile2-page .email-button:hover {
+    background-color: rgba(204, 120, 0, 0.9);
+}
+
+/* Profile 3 - Blue Theme */
+.profile3-page .background {
+    background-color: rgba(100, 150, 255, 0.8);
+}
+
+.profile3-page .profile-container {
+    background-color: rgba(200, 220, 255, 0.9);
+}
+
+.profile3-page #course {
+    color: rgb(0, 100, 200);
+}
+
+.profile3-page .table-background {
+    background-color: rgba(100, 150, 255, 0.6);
+}
+
+.profile3-page .info-table {
+    border: 3px solid #0066cc;
+}
+
+.profile3-page .info-table th,
+.profile3-page .info-table td {
+    border: 3px solid #004499;
+}
+
+.profile3-page .info-table th {
+    background-color: rgba(150, 200, 255, 0.8);
+}
+
+.profile3-page .info-table td {
+    background-color: rgba(200, 230, 255, 0.7);
+}
+
+.profile3-page .info-table tr:hover {
+    background-color: rgba(120, 180, 255, 0.8);
+}
+
+.profile3-page .email-button {
+    background-color: rgba(100, 150, 255, 0.9);
+}
+
+.profile3-page .email-button:hover {
+    background-color: rgba(80, 120, 200, 0.9);
+}
+
+/* Profile 4 - Green Theme */
+.profile4-page .background {
+    background-color: rgba(100, 200, 100, 0.8);
+}
+
+.profile4-page .profile-container {
+    background-color: rgba(200, 255, 200, 0.9);
+}
+
+.profile4-page #course {
+    color: rgb(0, 150, 0);
+}
+
+.profile4-page .table-background {
+    background-color: rgba(100, 200, 100, 0.6);
+}
+
+.profile4-page .info-table {
+    border: 3px solid #00aa00;
+}
+
+.profile4-page .info-table th,
+.profile4-page .info-table td {
+    border: 3px solid #008800;
+}
+
+.profile4-page .info-table th {
+    background-color: rgba(150, 255, 150, 0.8);
+}
+
+.profile4-page .info-table td {
+    background-color: rgba(200, 255, 200, 0.7);
+}
+
+.profile4-page .info-table tr:hover {
+    background-color: rgba(120, 220, 120, 0.8);
+}
+
+.profile4-page .email-button {
+    background-color: rgba(100, 200, 100, 0.9);
+}
+
+.profile4-page .email-button:hover {
+    background-color: rgba(80, 160, 80, 0.9);
 }
