@@ -646,7 +646,7 @@ button:hover,
     max-width: 600px;
     margin: 2rem auto;
     padding: 2rem;
-    background: #e7dcf4;
+    background: #ffffff;
     border: 1px solid #333;
     border-radius: 8px;
 }
@@ -1200,6 +1200,74 @@ input:focus:valid {
     }
 }
 
+/* === Additional overrides merged from additional-styles.css === */
+/* Additional styles neutralized to respect global 3-color palette */
+.levels-grid,
+.types-grid,
+.promotions-grid,
+.plans-grid,
+.packages-grid,
+.features-grid,
+.benefits-grid,
+.includes-grid,
+.events-timeline,
+.info-grid,
+.categories-grid,
+.bouquet-grid,
+.decoration-grid,
+.portfolio-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+/* Remove gradients, shadows, and non-palette colors */
+.level-item,
+.type-item,
+.promotion-item,
+.plan-item,
+.package-item,
+.feature-item,
+.benefit-item,
+.schedule-item,
+.event-item,
+.category-item,
+.bouquet-item,
+.decoration-item,
+.portfolio-item,
+.include-item,
+.info-item {
+    background: #FFFBDE;
+    border: 1px solid #333;
+    padding: 1rem;
+}
+
+.level-icon,
+.benefit-icon,
+.schedule-date {
+    background: #9B7EBD;
+    color: #FFFBDE;
+}
+
+.promotion-badge { background: #9B7EBD; color: #FFFBDE; }
+.promotion-price,
+.plan-price,
+.package-price,
+.bundle-savings,
+.tier-price { color: #333; }
+
+.terms-section { background: #FFFBDE; }
+.terms-content li { color: #333; border-bottom: 1px solid #333; }
+.terms-content li::before { color: #9B7EBD; }
+
+@media (max-width: 768px) {
+    .levels-grid,
+    .types-grid,
+    .promotions-grid,
+    .plans-grid,
+    .packages-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* graduation */
 #graduationbouquet{
@@ -1523,65 +1591,6 @@ hr{
 
 
 
-/* === Additional overrides merged from additional-styles.css === */
-/* Additional styles neutralized to respect global 3-color palette */
-.levels-grid,
-.types-grid,
-.promotions-grid,
-.plans-grid,
-.packages-grid,
-.features-grid,
-.benefits-grid,
-.includes-grid,
-.events-timeline,
-.info-grid,
-.categories-grid,
-.bouquet-grid,
-.decoration-grid,
-.portfolio-grid {
-    display: grid;
-    gap: 2rem;
-}
-
-/* Remove gradients, shadows, and non-palette colors */
-.level-item,
-.type-item,
-.promotion-item,
-.plan-item,
-.package-item,
-.feature-item,
-.benefit-item,
-.schedule-item,
-.event-item,
-.category-item,
-.bouquet-item,
-.decoration-item,
-.portfolio-item,
-.include-item,
-.info-item {
-    background: #FFFBDE;
-    border: 1px solid #333;
-    padding: 1rem;
-}
-
-.level-icon,
-.benefit-icon,
-.schedule-date {
-    background: #9B7EBD;
-    color: #FFFBDE;
-}
-
-.promotion-badge { background: #9B7EBD; color: #FFFBDE; }
-.promotion-price,
-.plan-price,
-.package-price,
-.bundle-savings,
-.tier-price { color: #333; }
-
-.terms-section { background: #FFFBDE; }
-.terms-content li { color: #333; border-bottom: 1px solid #333; }
-.terms-content li::before { color: #9B7EBD; }
-
 @media (max-width: 768px) {
     .levels-grid,
     .types-grid,
@@ -1593,6 +1602,29 @@ hr{
 }
 
 /* Enhancement Page Styles */
+.enhancement-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.enhancement-section h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.enhancement-section p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
 .enhancement-list {
     display: flex;
     flex-direction: column;
@@ -1671,6 +1703,15 @@ hr{
 
 /* Responsive adjustments for enhancement page */
 @media (max-width: 768px) {
+    .enhancement-section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .enhancement-section h1 {
+        font-size: 2rem;
+    }
+    
     .enhancement-item {
         padding: 1rem;
     }
