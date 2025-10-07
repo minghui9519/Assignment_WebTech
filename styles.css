@@ -1425,7 +1425,7 @@ input:focus:valid {
 /*  workshop section styling*/
 .workshop-details-section{
     background-color: #ffffff;
-    margin-left: 10px;
+    width:900px;
     padding:30px;
     border-radius: 12px;
     box-shadow:0 4px 20px rgba(0,0,0,0.2);
@@ -1457,6 +1457,7 @@ input:focus:valid {
     line-height:0.2;
 }
 
+
 .workshop-sidebar{
     position:sticky;
     top:30px;
@@ -1477,9 +1478,9 @@ input:focus:valid {
 .box-area{
     display: flex;
     justify-content: flex-start;
-    gap:20px;
+    gap:40px;
     flex-wrap:wrap;
-    padding-left: 30px;
+    padding-left: 10px;
     padding-top: 10px;
 }
 
@@ -1490,7 +1491,7 @@ input:focus:valid {
 
 
 .box img{
-	width:100%;
+	width:400px;
 	border-radius:5px;
 	display:block;
 	transition: transform 0.8s;
