@@ -1880,6 +1880,11 @@ hr{
 
 .profile1-page .info-table td {
     background-color: rgba(122, 241, 252, 0.573);
+    padding-left: 20px;
+}
+
+.info-table ul{
+    padding-left: 20px;
 }
 
 .profile1-page .info-table tr:hover {
@@ -1896,48 +1901,53 @@ hr{
 
 /* Profile 2 - Orange Theme */
 .profile2-page .background {
-    background-color: rgba(255, 166, 0, 0.8);
+    background-color: rgba(227, 188, 231, 0.8);
 }
 
 .profile2-page .profile-container {
-    background-color: rgba(255, 200, 100, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .profile2-page #course {
-    color: rgb(255, 100, 0);
+    color: rgb(67, 152, 221);
 }
 
 .profile2-page .table-background {
-    background-color: rgba(255, 166, 0, 0.6);
+    background-color: rgba(227, 188, 231, 0.8);
 }
 
 .profile2-page .info-table {
-    border: 3px solid #ff6600;
+    border: 3px solid #658bf1;
 }
 
 .profile2-page .info-table th,
 .profile2-page .info-table td {
-    border: 3px solid #cc5500;
+    border: 3px solid #032583;
 }
 
 .profile2-page .info-table th {
-    background-color: rgba(255, 200, 50, 0.8);
+    background-color: rgba(243, 248, 144, 0.723);
 }
 
 .profile2-page .info-table td {
-    background-color: rgba(255, 220, 150, 0.7);
+    background-color: rgba(174, 252, 204, 0.573);
+    padding-left: 20px;
+}
+
+.info-table ul{
+    padding-left: 20px;
 }
 
 .profile2-page .info-table tr:hover {
-    background-color: rgba(255, 180, 80, 0.8);
+    background-color: rgba(202, 244, 125, 0.619);
 }
 
 .profile2-page .email-button {
-    background-color: rgba(255, 166, 0, 0.9);
+    background-color: rgba(255, 255, 255, 0.69);
 }
 
 .profile2-page .email-button:hover {
-    background-color: rgba(204, 120, 0, 0.9);
+    background-color: rgba(246, 148, 73, 0.619);
 }
 
 /* Profile 3 - Blue Theme */
@@ -1972,6 +1982,11 @@ hr{
 
 .profile3-page .info-table td {
     background-color: rgba(200, 230, 255, 0.7);
+    padding-left: 20px;
+}
+
+.info-table ul{
+    padding-left: 20px;
 }
 
 .profile3-page .info-table tr:hover {
@@ -2018,6 +2033,11 @@ hr{
 
 .profile4-page .info-table td {
     background-color: rgba(200, 255, 200, 0.7);
+    padding-left: 20px;
+}
+
+.info-table ul{
+    padding-left: 20px;
 }
 
 .profile4-page .info-table tr:hover {
