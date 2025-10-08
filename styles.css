@@ -2063,3 +2063,361 @@ hr{
     margin: 1rem 0 2rem;
     color: #333;
 }
+
+/*Hand Bouquet Page*/
+#handbouquet {
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+#handbouquet h2 {
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.handbouquet-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+
+.handbouquet-product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.handbouquet-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.handbouquet-box-img{
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+}
+
+.handbouquet-box-img:hover{
+    opacity: 0.8;
+}
+
+.handbouquet-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.handbouquet-box-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.handbouquet-box-text .handbouquet-text-title{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.handbouquet-box-text span{
+
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.handbouquet-box-text span del{
+    color: #696969;
+}
+
+.handbouquet-box-text .handbouquet-cart-btn{
+    border-top: 1px solid #e9e9e9;
+    width: 100%;
+    padding: 10px;
+    color: #1d1d1d;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.handbouquet-box-text .handbouquet-cart-btn svg{
+    margin-right: 5px;
+}
+
+.handbouquet-box-text .handbouquet-cart-btn:hover{
+    background-color: #9B7EBD;
+    border-top: 1px solid transparent;
+    color: #ffffff;
+    fill: #ffffff;
+}
+
+/*CNY Decoration Page*/
+#cny {
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+#cny h2 {
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.cny-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+
+.cny-product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.cny-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cny-box-img{
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+}
+
+.cny-box-img:hover{
+    opacity: 0.8;
+}
+
+.cny-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.cny-box-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cny-box-text .cny-text-title{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.cny-box-text span{
+
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.cny-box-text span del{
+    color: #696969;
+}
+
+.cny-box-text .cny-cart-btn{
+    border-top: 1px solid #e9e9e9;
+    width: 100%;
+    padding: 10px;
+    color: #1d1d1d;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cny-box-text .cny-cart-btn svg{
+    margin-right: 5px;
+}
+
+.cny-box-text .cny-cart-btn:hover{
+    background-color: #9B7EBD;
+    border-top: 1px solid transparent;
+    color: #ffffff;
+    fill: #ffffff;
+}
+
+/*Grand Decoration Page*/
+#grand {
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+#grand h2 {
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.grand-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+
+.grand-product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.grand-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.grand-box-img{
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+}
+
+.grand-box-img:hover{
+    opacity: 0.8;
+}
+
+.grand-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.grand-box-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grand-box-text .grand-text-title{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.grand-box-text span{
+
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.grand-box-text span del{
+    color: #696969;
+}
+
+.grand-box-text .grand-cart-btn{
+    border-top: 1px solid #e9e9e9;
+    width: 100%;
+    padding: 10px;
+    color: #1d1d1d;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grand-box-text .grand-cart-btn svg{
+    margin-right: 5px;
+}
+
+.grand-box-text .grand-cart-btn:hover{
+    background-color: #9B7EBD;
+    border-top: 1px solid transparent;
+    color: #ffffff;
+    fill: #ffffff;
+}
+
+/* Product Selection Page */
+#product-selection {
+    max-width: 2000px;
+    width: 90%;
+    margin: 15px auto;
+}
+
+#product-selection h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+
+.product-box {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.product-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.product-box a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+
+.product-box img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.product-box h2 {
+    margin-top: 15px;
+    font-size: 1.3em;
+}

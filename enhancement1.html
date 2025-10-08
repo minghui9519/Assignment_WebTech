@@ -18,7 +18,7 @@
             <ul class="nav-menu">
                 <li><a href="index.html">Main</a></li>
                 <li class="dropdown">
-                    <a>Product</a>
+                    <a href="product-selection.html">Product</a>
                     <ul class="dropdown-menu">
                         <li><a href="hand-bouquet.html">Hand Bouquet</a></li>
                         <li><a href="cny-decoration.html">CNY Decoration</a></li>
@@ -615,6 +615,43 @@
 </code></pre>
                         </div>
                         <p><strong>Hyperlink to implementation:</strong> <a href="profile2.html">Profile Page Hover Effects</a></p>
+                        
+                        <p><strong>Third-party source:</strong> Responsive design techniques from <a href="https://www.youtube.com/watch?v=oYRda7UtuhA" target="_blank">YouTube CSS Animation Tutorial</a></p>
+                    </article>
+
+                    <article class="enhancement-item">
+                        <h3>14. Advanced CSS transforms & Hover Effects</h3>
+                        <p><strong>How it goes beyond basic requirements:</strong> Basic assignments typically use simple hover color changes. This enhancement implements sophisticated 3D-style transforms with translateY, scale effects, and dynamic shadow changes that create depth and modern interaction feedback.</p>
+                        
+                        <p><strong>Code needed to implement:</strong></p>
+                        <div class="code-example">
+                            <pre><code>.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+
+.product-box {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.product-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+</code></pre>
+                        </div>
+                        <p><strong>Hyperlink to implementation:</strong> <a href="product-selection.html#product-selection">Product Selection Images Hover Effects</a></p>
                         
                         <p><strong>Third-party source:</strong> Responsive design techniques from <a href="https://www.youtube.com/watch?v=oYRda7UtuhA" target="_blank">YouTube CSS Animation Tutorial</a></p>
                     </article>
