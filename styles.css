@@ -643,7 +643,7 @@ button:hover,
 
 /* Login form specific styles */
 .background{
-    background-color: rgb(231, 220, 250);
+    background-color: rgb(248, 246, 253);
 }
 
 .inquiry-section {
@@ -2030,4 +2030,16 @@ hr{
 
 .profile4-page .email-button:hover {
     background-color: rgba(80, 160, 80, 0.9);
+}
+
+/* Profile page specific styles - moved from inline styles */
+.profile-container-override {
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.profile-page-title {
+    text-align: center;
+    margin: 1rem 0 2rem;
+    color: #333;
 }
