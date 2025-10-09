@@ -1,62 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membership Registration - Root Flower</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Root Flower | Membership Registration</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <!-- Header Navigation -->
-    <header>
-        <nav>
-            <a href="index.html" class="nav-brand">
-                <img class="site-logo" src="images/Rootflowerlogo.jpg" alt="Root Flower Logo">
-                <h1><strong>Root Flower</strong></h1>
-            </a>
-            <ul class="nav-menu">
-                <li><a href="index.html">Main</a></li>
-                <li class="dropdown">
-                    <a href="product-selection.html">Product</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="hand-bouquet.html">Hand Bouquet</a></li>
-                        <li><a href="cny-decoration.html">CNY Decoration</a></li>
-                        <li><a href="grand-decoration.html">Grand Decoration</a></li>
-                        <li><a href="graduation.html">Graduation</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a>Activities</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="workshop.html">Workshop</a></li>
-                        <li><a href="promotion.html">Promotion</a></li>
-                    </ul>
-                </li>
-                <li><a href="workshop-registration.html">Workshop</a></li>
-                <li><a href="membership-registration.html">Membership</a></li>
-                <li><a href="inquiry-form.html">Inquiry</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Main Content -->
-    <main>
-        <div class="container">
-            <section class="inquiry-section">
-                <h2>Membership Registration</h2>
-                <p>This page is under construction. Please check back later.</p>
-            </section>
-        </div>
-    </main>
+<body class="membership-page">
+  <!-- Header Navigation -->
+  <header id="navigation">
+    <nav>
+      <a href="index.html" class="nav-brand">
+        <img class="site-logo" src="images/Rootflowerlogo.jpg" alt="Root Flower Logo">
+        <h1><strong>Root Flower</strong></h1>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html">Main</a></li>
+        <li class="dropdown">
+          <a href="product-selection.html">Product</a>
+          <ul class="dropdown-menu">
+            <li><a href="hand-bouquet.html">Hand Bouquet</a></li>
+            <li><a href="cny-decoration.html">CNY Decoration</a></li>
+            <li><a href="grand-decoration.html">Grand Decoration</a></li>
+            <li><a href="graduation.html">Graduation</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a>Activities</a>
+          <ul class="dropdown-menu">
+            <li><a href="workshop.html">Workshop</a></li>
+            <li><a href="promotion.html">Promotion</a></li>
+          </ul>
+        </li>
+        <li><a href="workshop-registration.html">Workshop</a></li>
+        <li><a href="membership-registration.html" class="active">Membership</a></li>
+        <li><a href="inquiry-form.html">Inquiry</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Footer -->
-    <footer>
+  <!-- Main Content -->
+  <main>
+    <section class="registration-section">
+      <h2>Membership Registration</h2>
+      <p>Join Root Flower’s community for exclusive offers, member-only discounts, and early access to workshops 🌸</p>
+
+      <form action="#" method="post">
+        <label for="firstName">First Name *</label>
+        <input type="text" id="firstName" name="firstName" maxlength="25" pattern="[A-Za-z\s]+" required placeholder="Enter your first name">
+
+        <label for="lastName">Last Name *</label>
+        <input type="text" id="lastName" name="lastName" maxlength="25" pattern="[A-Za-z\s]+" required placeholder="Enter your last name">
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+
+        <label for="loginID">Login ID *</label>
+        <input type="text" id="loginID" name="loginID" maxlength="10" pattern="[A-Za-z]+" required placeholder="Choose a login ID">
+
+        <label for="password">Password *</label>
+        <input type="password" id="password" name="password" maxlength="25" required placeholder="Enter a password">
+
+        <button type="submit">Register Now</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
     <div class="container">
-  
       <div class="sec aboutus">
-        <h2>About us</h2>
+        <h2><strong>About us</strong></h2>
         <p><strong>Find out more about us</strong></p>
         <ul class="sci">
           <li><a href="profile.html" title="Profile"><i class="fa-regular fa-circle-user"></i></a></li>
@@ -67,14 +84,14 @@
           <li><a href="enhancement1.html" title="Enhancement"><i class="fa-solid fa-rocket"></i></a></li>
         </ul>
       </div>
-  
+
       <div class="sec quicklinks">
         <h2>Location</h2>
         <ul>
-          <li><p><i class="fa-solid fa-map"></i><a href="https://www.google.com/maps/place/Root+Flower/@1.5027018,110.3529903,17z/data=!3m1!4b1!4m6!3m5!1s0x31fba7e7dbdd19e9:0xcef55dd65e78119!8m2!3d1.5027018!4d110.3555652!16s%2Fg%2F11rhr3hrp7?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Google Maps">Lorong Bdc, 93350 Kuching, Sarawak</a></p></li>
+          <li><p><i class="fa-solid fa-map"></i><a href="https://www.google.com/maps/place/Root+Flower/" target="_blank" title="Google Maps">Lorong BDC, 93350 Kuching, Sarawak</a></p></li>
         </ul>
       </div>
-  
+
       <div class="sec quicklinks">
         <h2>Shop</h2>
         <ul>
@@ -84,7 +101,7 @@
           <li><a href="graduation.html">Graduation</a></li>
         </ul>
       </div>
-  
+
       <div class="sec contact">
         <h2>Contact us</h2>
         <ul class="info">
@@ -98,13 +115,11 @@
           </li>
         </ul>
       </div>
-  
     </div>
-    </footer>
-    
-    <div class="copyrightText">
-      <p>&copy; Root Flower. All rights reserved.</p>
-    </div>
+  </footer>
 
+  <div class="copyrightText">
+    <p>&copy; Root Flower. All rights reserved.</p>
+  </div>
 </body>
 </html>
