@@ -2439,7 +2439,7 @@ hr{
 /* Root Flower - Membership Registration Page */
 
 .membership-page body {
-    background-color: #ffffff;
+    background-color: #fff8fb;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -2527,7 +2527,7 @@ body.membership-page main {
 /* Root Flower - Inquiry Form Page */
 
 .inquiry-page body {
-    background-color: #ffffff;
+    background-color: #fff8fb;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -2618,11 +2618,10 @@ body.inquiry-page main {
 /* Root Flower - Workshop Registration Page */
 
 body.workshop-page {
-    background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    background-color: #fff8fb;
 }
 
-body.workshop-page main {
+.workshop-page main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -2632,25 +2631,25 @@ body.workshop-page main {
 
 .workshop-page .registration-section {
     max-width: 600px;
-    width: 100%;
-    background: #ffffff;
-    border: 1px solid #333;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    text-align: center;
     margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 16px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #000; 
+    font-family: 'Poppins', sans-serif; 
 }
 
 .workshop-page .registration-section h2 {
     color: #9B7EBD;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     font-size: 2rem;
 }
 
 .workshop-page .registration-section p {
     color: #555;
-    margin-bottom: 2rem;
+    margin-bottom: 25px;
     font-size: 1rem;
 }
 
@@ -2673,17 +2672,16 @@ body.workshop-page main {
     width: 100%;
     padding: 0.75rem;
     border: 1px solid #dc3545;
-    border-radius: 4px;
+    border-radius: 6px; 
     font-size: 1rem;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: border-color 0.3s;
 }
 
 .workshop-page input:focus,
 .workshop-page select:focus,
 .workshop-page textarea:focus {
-    outline: none;
     border-color: #9B7EBD;
-    box-shadow: 0 0 0 2px rgba(155, 126, 189, 0.2);
+    outline: none;
 }
 
 .workshop-page button {
@@ -2691,11 +2689,10 @@ body.workshop-page main {
     color: white;
     border: none;
     padding: 0.9rem;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    /* width: 100%;  <-- Removed to fix large button issue */
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .workshop-page button:hover {
@@ -2747,4 +2744,142 @@ form .form-actions button[type="reset"] {
 form .form-actions button[type="reset"]:hover {
     background-color: #9B7EBD;
     color: #fff;
+}
+
+/* Root Flower - Global Form Style Consistency */
+
+body.membership-page,
+body.inquiry-page,
+body.workshop-page {
+    background-color: #fff8fb;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px 30px;
+    box-sizing: border-box;
+}
+
+.registration-section,
+.inquiry-section,
+.workshop-page .registration-section {
+    max-width: 600px;
+    width: 100%;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border: 1px solid #000; 
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.registration-section h2,
+.inquiry-section h2,
+.workshop-page .registration-section h2 {
+    color: #9B7EBD;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.registration-section p,
+.inquiry-section p,
+.workshop-page .registration-section p {
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.membership-page form,
+.inquiry-page form,
+.workshop-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.membership-page label,
+.inquiry-page label,
+.workshop-page label {
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+}
+
+.membership-page input,
+.inquiry-page input,
+.inquiry-page select,
+.inquiry-page textarea,
+.workshop-page input,
+.workshop-page select,
+.workshop-page textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #dc3545;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.membership-page input:focus,
+.inquiry-page input:focus,
+.inquiry-page select:focus,
+.inquiry-page textarea:focus,
+.workshop-page input:focus,
+.workshop-page select:focus,
+.workshop-page textarea:focus {
+    outline: none;
+    border-color: #9B7EBD;
+    box-shadow: 0 0 0 2px rgba(155, 126, 189, 0.2);
+}
+
+form .form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+form .form-actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #9B7EBD;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 130px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form .form-actions button:hover {
+    background-color: #333;
+    transform: scale(1.03);
+}
+
+form .form-actions button[type="reset"] {
+    background-color: #9B7EBD;
+    color: #fff;
+}
+
+form .form-actions button[type="reset"]:hover {
+    background-color: #333;
+}
+
+@media (max-width: 600px) {
+    .registration-section,
+    .inquiry-section,
+    .workshop-page .registration-section {
+        margin: 30px 15px;
+        padding: 25px;
+    }
 }
