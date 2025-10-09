@@ -1306,7 +1306,7 @@ input:focus:valid {
 /* graduation */
 #graduationbouquet{
     max-width: 1200px;
-    width: 1.6rem;
+    width: 90%;
     margin: 50px auto;
 }
 
