@@ -643,7 +643,7 @@ button:hover,
 
 /* Login form specific styles */
 .background{
-    background-color: rgb(248, 246, 253);
+    background-color: #ffffff;
 }
 
 .inquiry-section {
@@ -663,7 +663,7 @@ button:hover,
 }
 
 .inquiry-section p {
-    text-align: center;
+    text-align: left;
     color: #666;
     margin-bottom: 2rem;
 }
@@ -704,6 +704,51 @@ button:hover,
     font-size: 0.875rem;
     color: #666;
     font-style: italic;
+}
+
+/* Login page specific styles */
+body.login-page .inquiry-section {
+    text-align: left;
+}
+
+body.login-page .inquiry-section h2 {
+    text-align: center; /* Keep h2 centered */
+}
+
+body.login-page .inquiry-section p {
+    text-align: left;
+}
+
+body.login-page .form-group {
+    text-align: left;
+}
+
+body.login-page .form-group label {
+    text-align: left;
+}
+
+body.login-page .form-group input {
+    text-align: left;
+}
+
+body.login-page .form-group small {
+    text-align: left;
+}
+
+body.login-page .login-help {
+    text-align: left;
+}
+
+body.login-page .login-help p {
+    text-align: left;
+}
+
+body.login-page .login-help ul {
+    text-align: left;
+}
+
+body.login-page .login-help li {
+    text-align: left;
 }
 
 .login-help {
@@ -2424,7 +2469,7 @@ hr{
 /* Root Flower - Membership Registration Page */
 
 .membership-page body {
-    background-color: #fff8fb;
+    background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -2512,7 +2557,7 @@ body.membership-page main {
 /* Root Flower - Inquiry Form Page */
 
 .inquiry-page body {
-    background-color: #fff8fb;
+    background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -2603,7 +2648,7 @@ body.inquiry-page main {
 /* Root Flower - Workshop Registration Page */
 
 body.workshop-page {
-    background-color: #fff8fb;
+    background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
 }
 
