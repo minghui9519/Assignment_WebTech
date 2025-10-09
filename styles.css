@@ -2428,12 +2428,11 @@ hr{
     font-family: 'Poppins', sans-serif;
 }
 
-/* Same spacing from navbar as workshop page */
 body.membership-page main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 40px 20px 30px; /* unified spacing */
+    padding: 40px 20px 30px; 
     box-sizing: border-box;
 }
 
@@ -2451,13 +2450,13 @@ body.membership-page main {
 .registration-section h2 {
     color: #9B7EBD;
     margin-bottom: 10px;
-    font-size: 2rem; /* unified heading size */
+    font-size: 2rem; 
 }
 
 .registration-section p {
     color: #555;
     margin-bottom: 25px;
-    font-size: 1rem; /* unified paragraph size */
+    font-size: 1rem; 
 }
 
 .membership-page form {
@@ -2517,7 +2516,6 @@ body.membership-page main {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Same navbar spacing */
 body.inquiry-page main {
     display: flex;
     justify-content: center;
