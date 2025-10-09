@@ -643,7 +643,7 @@ button:hover,
 
 /* Login form specific styles */
 .background{
-    background-color: #ffffff;
+    background-color: rgb(231, 220, 250);
 }
 
 .inquiry-section {
@@ -663,7 +663,7 @@ button:hover,
 }
 
 .inquiry-section p {
-    text-align: left;
+    text-align: center;
     color: #666;
     margin-bottom: 2rem;
 }
@@ -704,51 +704,6 @@ button:hover,
     font-size: 0.875rem;
     color: #666;
     font-style: italic;
-}
-
-/* Login page specific styles */
-body.login-page .inquiry-section {
-    text-align: left;
-}
-
-body.login-page .inquiry-section h2 {
-    text-align: center; /* Keep h2 centered */
-}
-
-body.login-page .inquiry-section p {
-    text-align: left;
-}
-
-body.login-page .form-group {
-    text-align: left;
-}
-
-body.login-page .form-group label {
-    text-align: left;
-}
-
-body.login-page .form-group input {
-    text-align: left;
-}
-
-body.login-page .form-group small {
-    text-align: left;
-}
-
-body.login-page .login-help {
-    text-align: left;
-}
-
-body.login-page .login-help p {
-    text-align: left;
-}
-
-body.login-page .login-help ul {
-    text-align: left;
-}
-
-body.login-page .login-help li {
-    text-align: left;
 }
 
 .login-help {
@@ -1566,14 +1521,46 @@ hr{
     display: flex;
     justify-content: center;
     align-items: stretch;
-    gap: 30px;   /*more spacing between cards*/
+    gap: 50px;   /*more spacing between cards*/
     flex-wrap: wrap;
-    padding: 40px 20px;
+    padding: 20px 10px;
     width: 100%;
     margin: 0;  
 }
 
+.offer-card{
+    flex: 1 1 31%;
+    min-width: 280px;
+    max-width: 360px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 35px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
 
+.offer-card h3, 
+.offer-card p{ 
+    margin-bottom: 15px;
+
+}
+
+.offer-card:hover{
+    transform: translateY(-5px);
+}
+
+.offer-card img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover; /* keeps propotions, crops nicely*/
+    border-radius: 10px;
+    margin-bottom: 15px;
+    
+}
 
 .btn{
     margin-top: auto;
@@ -1589,6 +1576,7 @@ hr{
     margin-bottom: 25px;
 }
 
+/*order-list*/
 .ordered-list{
     max-width: 900px;
     margin:0 auto;
@@ -1612,7 +1600,7 @@ hr{
     color:#444;
     padding:8px 0;
     font-size: 18px;
-
+    
     transition: color 0.3s ease;
 }
 
@@ -2064,687 +2052,4 @@ hr{
 
 .profile4-page .email-button:hover {
     background-color: rgba(80, 160, 80, 0.9);
-}
-
-/* Profile page specific styles - moved from inline styles */
-.profile-container-override {
-    max-width: 1200px;
-    margin: 2rem auto;
-}
-
-.profile-page-title {
-    text-align: center;
-    margin: 1rem 0 2rem;
-    color: #333;
-}
-
-/*Hand Bouquet Page*/
-#handbouquet {
-    max-width: 1200px;
-    width: 90%;
-    margin: 50px auto;
-}
-
-#handbouquet h2 {
-    color: #333;
-    font-size: 1.6rem;
-    font-weight: 700;
-}
-
-.handbouquet-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 50px;
-    margin-top: 20px;
-    align-items: flex-start;
-}
-
-.handbouquet-product-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 40px;
-}
-
-.handbouquet-box{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.handbouquet-box-img{
-    width: 100%;
-    max-height: 400px;
-    height: 100%;
-    border-radius: 5px;
-    transition: all ease 0.3s;
-}
-
-.handbouquet-box-img:hover{
-    opacity: 0.8;
-}
-
-.handbouquet-box-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-}
-
-.handbouquet-box-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.handbouquet-box-text .handbouquet-text-title{
-    color: #333;
-    font-size: 1rem;
-    font-weight: 700;
-    margin-top: 10px;
-}
-
-.handbouquet-box-text span{
-
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin: 5px;
-}
-
-.handbouquet-box-text span del{
-    color: #696969;
-}
-
-.handbouquet-box-text .handbouquet-cart-btn{
-    border-top: 1px solid #e9e9e9;
-    width: 100%;
-    padding: 10px;
-    color: #1d1d1d;
-    font-size: 0.9rem;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.handbouquet-box-text .handbouquet-cart-btn svg{
-    margin-right: 5px;
-}
-
-.handbouquet-box-text .handbouquet-cart-btn:hover{
-    background-color: #9B7EBD;
-    border-top: 1px solid transparent;
-    color: #ffffff;
-    fill: #ffffff;
-}
-
-/*CNY Decoration Page*/
-#cny {
-    max-width: 1200px;
-    width: 90%;
-    margin: 50px auto;
-}
-
-#cny h2 {
-    color: #333;
-    font-size: 1.6rem;
-    font-weight: 700;
-}
-
-.cny-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 50px;
-    margin-top: 20px;
-    align-items: flex-start;
-}
-
-.cny-product-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 40px;
-}
-
-.cny-box{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.cny-box-img{
-    width: 100%;
-    max-height: 400px;
-    height: 100%;
-    border-radius: 5px;
-    transition: all ease 0.3s;
-}
-
-.cny-box-img:hover{
-    opacity: 0.8;
-}
-
-.cny-box-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-}
-
-.cny-box-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.cny-box-text .cny-text-title{
-    color: #333;
-    font-size: 1rem;
-    font-weight: 700;
-    margin-top: 10px;
-}
-
-.cny-box-text span{
-
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin: 5px;
-}
-
-.cny-box-text span del{
-    color: #696969;
-}
-
-.cny-box-text .cny-cart-btn{
-    border-top: 1px solid #e9e9e9;
-    width: 100%;
-    padding: 10px;
-    color: #1d1d1d;
-    font-size: 0.9rem;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cny-box-text .cny-cart-btn svg{
-    margin-right: 5px;
-}
-
-.cny-box-text .cny-cart-btn:hover{
-    background-color: #9B7EBD;
-    border-top: 1px solid transparent;
-    color: #ffffff;
-    fill: #ffffff;
-}
-
-/*Grand Decoration Page*/
-#grand {
-    max-width: 1200px;
-    width: 90%;
-    margin: 50px auto;
-}
-
-#grand h2 {
-    color: #333;
-    font-size: 1.6rem;
-    font-weight: 700;
-}
-
-.grand-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 50px;
-    margin-top: 20px;
-    align-items: flex-start;
-}
-
-.grand-product-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 40px;
-}
-
-.grand-box{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.grand-box-img{
-    width: 100%;
-    max-height: 400px;
-    height: 100%;
-    border-radius: 5px;
-    transition: all ease 0.3s;
-}
-
-.grand-box-img:hover{
-    opacity: 0.8;
-}
-
-.grand-box-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-}
-
-.grand-box-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.grand-box-text .grand-text-title{
-    color: #333;
-    font-size: 1rem;
-    font-weight: 700;
-    margin-top: 10px;
-}
-
-.grand-box-text span{
-
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin: 5px;
-}
-
-.grand-box-text span del{
-    color: #696969;
-}
-
-.grand-box-text .grand-cart-btn{
-    border-top: 1px solid #e9e9e9;
-    width: 100%;
-    padding: 10px;
-    color: #1d1d1d;
-    font-size: 0.9rem;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.grand-box-text .grand-cart-btn svg{
-    margin-right: 5px;
-}
-
-.grand-box-text .grand-cart-btn:hover{
-    background-color: #9B7EBD;
-    border-top: 1px solid transparent;
-    color: #ffffff;
-    fill: #ffffff;
-}
-
-/* Product Selection Page */
-#product-selection {
-    max-width: 2000px;
-    width: 90%;
-    margin: 15px auto;
-}
-
-#product-selection h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-.product-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 2000px;
-    margin: 0 auto;
-}
-
-
-.product-box {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 30px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-
-.product-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-
-.product-box a {
-    text-decoration: none;
-    color: #333;
-    display: block;
-}
-
-
-.product-box img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-
-.product-box h2 {
-    margin-top: 15px;
-    font-size: 1.3em;
-}
-
-/* Root Flower - Membership Registration Page */
-
-.membership-page body {
-    background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-}
-
-body.membership-page main {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px 20px 30px; 
-    box-sizing: border-box;
-}
-
-.registration-section {
-    max-width: 600px;
-    margin: 60px auto;
-    padding: 40px;
-    background-color: #ffffff;
-    border: 1px solid #000; 
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.registration-section h2 {
-    color: #9B7EBD;
-    margin-bottom: 10px;
-    font-size: 2rem; 
-}
-
-.registration-section p {
-    color: #555;
-    margin-bottom: 25px;
-    font-size: 1rem; 
-}
-
-.membership-page form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    text-align: left;
-}
-
-.membership-page label {
-    font-weight: 600;
-    color: #333;
-    font-size: 1rem;
-}
-
-.membership-page input {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #dc3545;
-    border-radius: 6px;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-}
-
-.membership-page input:focus {
-    border-color: #9B7EBD;
-    outline: none;
-}
-
-.membership-page button {
-    background-color: #9B7EBD;
-    color: white;
-    border: none;
-    padding: 0.9rem;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.membership-page button:hover {
-    background-color: #333;
-    transform: scale(1.03);
-}
-
-@media (max-width: 600px) {
-    .registration-section {
-        margin: 30px 15px;
-        padding: 25px;
-    }
-}
-
-/* Root Flower - Inquiry Form Page */
-
-.inquiry-page body {
-    background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-}
-
-body.inquiry-page main {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px 20px 30px;
-    box-sizing: border-box;
-}
-
-.inquiry-section {
-    max-width: 600px;
-    margin: 60px auto;
-    padding: 40px;
-    background-color: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.inquiry-section h2 {
-    color: #9B7EBD;
-    margin-bottom: 10px;
-    font-size: 2rem;
-}
-
-.inquiry-section p {
-    color: #555;
-    margin-bottom: 25px;
-    font-size: 1rem;
-}
-
-.inquiry-page form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    text-align: left;
-}
-
-.inquiry-page label {
-    font-weight: 600;
-    color: #333;
-    font-size: 1rem;
-}
-
-.inquiry-page input,
-.inquiry-page select,
-.inquiry-page textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #dc3545;
-    border-radius: 6px;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-}
-
-.inquiry-page input:focus,
-.inquiry-page select:focus,
-.inquiry-page textarea:focus {
-    border-color: #9B7EBD;
-    outline: none;
-}
-
-.inquiry-page button {
-    background-color: #9B7EBD;
-    color: white;
-    border: none;
-    padding: 0.9rem;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.inquiry-page button:hover {
-    background-color: #333;
-    transform: scale(1.03);
-}
-
-@media (max-width: 600px) {
-    .inquiry-section {
-        margin: 30px 15px;
-        padding: 25px;
-    }
-}
-
-/* Root Flower - Workshop Registration Page */
-
-body.workshop-page {
-    background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-}
-
-body.workshop-page main {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px 20px 30px;
-    box-sizing: border-box;
-}
-
-.workshop-page .registration-section {
-    max-width: 600px;
-    width: 100%;
-    background: #ffffff;
-    border: 1px solid #333;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    text-align: center;
-    margin: 60px auto;
-}
-
-.workshop-page .registration-section h2 {
-    color: #9B7EBD;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-
-.workshop-page .registration-section p {
-    color: #555;
-    margin-bottom: 2rem;
-    font-size: 1rem;
-}
-
-.workshop-page form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    text-align: left;
-}
-
-.workshop-page label {
-    font-weight: 600;
-    color: #333;
-    font-size: 1rem;
-}
-
-.workshop-page input,
-.workshop-page select,
-.workshop-page textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #dc3545;
-    border-radius: 4px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.workshop-page input:focus,
-.workshop-page select:focus,
-.workshop-page textarea:focus {
-    outline: none;
-    border-color: #9B7EBD;
-    box-shadow: 0 0 0 2px rgba(155, 126, 189, 0.2);
-}
-
-.workshop-page button {
-    background-color: #9B7EBD;
-    color: white;
-    border: none;
-    padding: 0.9rem;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    /* width: 100%;  <-- Removed to fix large button issue */
-}
-
-.workshop-page button:hover {
-    background-color: #333;
-    transform: scale(1.03);
-}
-
-@media (max-width: 600px) {
-    .workshop-page .registration-section {
-        margin: 30px 15px;
-        padding: 25px;
-    }
-}
-
-form .form-actions {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-form .form-actions button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    font-family: 'Poppins', sans-serif;
-    background-color: #9B7EBD;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    min-width: 130px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-form .form-actions button:hover {
-    background-color: #333;
-    transform: scale(1.03);
-}
-
-form .form-actions button[type="reset"] {
-    background-color: #9B7EBD;
-    color: #fff;
-}
-
-form .form-actions button[type="reset"]:hover {
-    background-color: #9B7EBD;
-    color: #fff;
 }
