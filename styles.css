@@ -1306,7 +1306,7 @@ input:focus:valid {
 /* graduation */
 #graduationbouquet{
     max-width: 1200px;
-    width: 90%;
+    width: 1.6rem;
     margin: 50px auto;
 }
 
@@ -1530,7 +1530,7 @@ hr{
 
 .offer-card{
     flex: 1 1 30%;
-    
+
     background: #fff;
     border-radius: 15px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
