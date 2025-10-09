@@ -2680,7 +2680,7 @@ body.workshop-page main {
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    width: 100%;
+    /* width: 100%;  <-- Removed to fix large button issue */
 }
 
 .workshop-page button:hover {
@@ -2693,4 +2693,43 @@ body.workshop-page main {
         margin: 30px 15px;
         padding: 25px;
     }
+}
+
+form .form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+form .form-actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #9B7EBD;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 130px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form .form-actions button:hover {
+    background-color: #333;
+    transform: scale(1.03);
+}
+
+form .form-actions button[type="reset"] {
+    background-color: #9B7EBD;
+    color: #fff;
+}
+
+form .form-actions button[type="reset"]:hover {
+    background-color: #9B7EBD;
+    color: #fff;
 }
