@@ -1954,7 +1954,7 @@ hr{
 
 /* Profile 3 - Blue Theme */
 .profile3-page .background {
-    background-color: rgba(100, 150, 255, 0.8);
+    background-color: rgba(173, 216, 230, 1);
 }
 
 .profile3-page .profile-container {
@@ -1966,7 +1966,7 @@ hr{
 }
 
 .profile3-page .table-background {
-    background-color: rgba(100, 150, 255, 0.6);
+    background-color: rgba(240, 248, 255, 1);
 }
 
 .profile3-page .info-table {
@@ -1992,15 +1992,15 @@ hr{
 }
 
 .profile3-page .info-table tr:hover {
-    background-color: rgba(120, 180, 255, 0.8);
+    background-color: rgba(246, 148, 73, 0.619);
 }
 
 .profile3-page .email-button {
-    background-color: rgba(100, 150, 255, 0.9);
+    background-color: rgba(100, 149, 237, 1);
 }
 
 .profile3-page .email-button:hover {
-    background-color: rgba(80, 120, 200, 0.9);
+    background-color: rgba(72, 118, 255, 1);
 }
 
 /* Profile 4 - Green Theme */
