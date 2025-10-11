@@ -226,7 +226,7 @@ main { min-height: calc(100vh - 140px); }
 
 /* Company Introduction Section */
 .company-intro-section {
-    padding: 2rem 0rem 4rem 0rem;
+    padding: 0.5rem 0rem 0.1rem 0rem;
     background-color: #ffffff;
     background-image: url('images/Background.jpg');
     background-position: center;
@@ -1872,7 +1872,7 @@ hr{
 }
 
 .profile1-page .info-table {
-    border: 3px solid #0fe2f9;
+    border: 3px solid #d6f90f;
 }
 
 .profile1-page .info-table th,
