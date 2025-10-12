@@ -412,20 +412,6 @@ main { min-height: calc(100vh - 140px); }
     min-width: 50px;
 }
 
-.news-date .day {
-    display: block;
-    font-size: 1.2rem;
-    font-weight: bold;
-    line-height: 1;
-}
-
-.news-date .month {
-    display: block;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    line-height: 1;
-}
-
 .news-content {
     padding: 1.5rem;
 }
@@ -519,8 +505,6 @@ button:hover,
 }
 
 /* Footer */  
-  /* Remove layout overrides on body that broke page flow and footer */
-  /* Previously set display:grid and padding which pushed content; keeping global body rules above */
   
   footer {
     position: relative;
@@ -1310,7 +1294,7 @@ input:focus:valid {
 /* graduation */
 #graduationbouquet{
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
     margin: 50px auto;
 }
 
@@ -2073,7 +2057,7 @@ hr{
 /*Hand Bouquet Page*/
 #handbouquet {
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
     margin: 50px auto;
 }
 
@@ -2173,7 +2157,7 @@ hr{
 /*CNY Decoration Page*/
 #cny {
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
     margin: 50px auto;
 }
 
@@ -2273,7 +2257,7 @@ hr{
 /*Grand Decoration Page*/
 #grand {
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
     margin: 50px auto;
 }
 
