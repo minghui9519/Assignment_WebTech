@@ -1294,7 +1294,7 @@ input:focus:valid {
 /* graduation */
 #graduationbouquet{
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
     margin: 50px auto;
 }
 
@@ -2057,7 +2057,7 @@ hr{
 /*Hand Bouquet Page*/
 #handbouquet {
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
     margin: 50px auto;
 }
 
@@ -2157,7 +2157,7 @@ hr{
 /*CNY Decoration Page*/
 #cny {
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
     margin: 50px auto;
 }
 
@@ -2257,7 +2257,7 @@ hr{
 /*Grand Decoration Page*/
 #grand {
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
     margin: 50px auto;
 }
 
