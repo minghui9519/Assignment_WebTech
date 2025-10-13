@@ -1543,7 +1543,7 @@ hr{
 
 .offer-card img{
     width: 100%;
-    height: 260px;
+    height: 280px;
     object-fit: cover; /* keeps propotions, crops nicely*/
     border-radius: 10px;
     margin-bottom: 15px;
