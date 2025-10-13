@@ -1451,8 +1451,8 @@ input:focus:valid {
     top:30px;
 }
 
-.instructor-card{
-    background:white;
+.instructor-card {
+    background:#ffffff;
     padding:25px;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);  
