@@ -185,11 +185,11 @@ main { min-height: calc(100vh - 140px); }
   }
   
   /* Background Images  */
-  .slide1 { background-image: url('images/photo 1.jpeg'); animation-delay: 0s; }
-  .slide2 { background-image: url('images/photo 2.jpeg'); animation-delay: 5s; }
-  .slide3 { background-image: url('images/photo 3.jpeg'); animation-delay: 10s; }
-  .slide4 { background-image: url('images/photo 4.jpeg'); animation-delay: 15s; }
-  .slide5 { background-image: url('images/photo 5.jpeg'); animation-delay: 20s; }
+  .slide1 { background-image: url('styles/images/photo 1.jpeg'); animation-delay: 0s; }
+  .slide2 { background-image: url('styles/images/photo 2.jpeg'); animation-delay: 5s; }
+  .slide3 { background-image: url('styles/images/photo 3.jpeg'); animation-delay: 10s; }
+  .slide4 { background-image: url('styles/images/photo 4.jpeg'); animation-delay: 15s; }
+  .slide5 { background-image: url('styles/images/photo 5.jpeg'); animation-delay: 20s; }
   
   /* Fade Animation */
   @keyframes fade {
@@ -228,7 +228,7 @@ main { min-height: calc(100vh - 140px); }
 .company-intro-section {
     padding: 0.5rem 0rem 0.1rem 0rem;
     background-color: #ffffff;
-    background-image: url('images/Background.jpg');
+    background-image: url('styles/images/Background.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -324,7 +324,7 @@ main { min-height: calc(100vh - 140px); }
 .news-section {
     padding: 2rem 0 4rem 0;
     background-color: #fff;
-    background-image: url('images/Background.jpg');
+    background-image: url('styles/images/Background.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
